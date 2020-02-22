@@ -32,4 +32,6 @@ You will need Bastion Host if you have large no of private OCI instances without
 
 - You can copy files directly to private host without hopping through Bastion host
 - To copy files locally to Bastion host, you can use scp command as follows: 'scp -i <private_key_file> <source_file> opc@<bastion_host_ip>:<destination_directory>'
+- Once the file is in Bastion host, use similar SCP command as above to move the files to private host
+
 
