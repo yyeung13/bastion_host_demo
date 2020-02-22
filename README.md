@@ -28,3 +28,8 @@ You will need Bastion Host if you have large no of private OCI instances without
 - UNIX doesn't like this file to be accessible by other users, so change the permission with 'chmod 700 id_rsa'
 - Now you can SSH to private host with 'ssh opc@<private_host_ip>'
 
+5. Copying files to Private Host
+
+- You can copy files directly to private host without hopping through Bastion host
+- To copy files locally to Bastion host, you can use scp command as follows: 'scp -i <private_key_file> <source_file> opc@<bastion_host_ip>:<destination_directory>'
+
